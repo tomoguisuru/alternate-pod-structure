@@ -12,9 +12,9 @@ module.exports = {
         return options.dasherizedModuleName;
       },
       __path__: function(options) {
-        if (options.pod) {
-          return path.join(/*options.podPath, */'adapters', options.dasherizedModuleName);
-        }
+        // if (options.pod) {
+        //   return path.join(options.podPath, 'adapters', options.dasherizedModuleName);
+        // }
         return 'adapters';
       },
       __test__: function(options) {

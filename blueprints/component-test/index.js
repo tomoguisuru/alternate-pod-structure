@@ -1,3 +1,5 @@
+var path        = require('path');
+
 module.exports = {
   description: 'Generates a component unit test.',
 
