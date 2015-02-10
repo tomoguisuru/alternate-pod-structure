@@ -34,6 +34,10 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
+  "dependencies": {
+    "inflection": "^1.5.3",
+    "fs-extra": "^0.11.1"
+  },
   "keywords": [
     "ember-addon"
   ],
