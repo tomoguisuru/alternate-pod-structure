@@ -1,8 +1,7 @@
 import DS from 'ember-data'
-import GeneratedModel from '../utils/generated-model'
 
-<%= classifiedModuleName %> = GeneratedModel('<%= dasherizedModuleName %>').extend({
+<%= classifiedModuleName %> = DS.Model.extend {
   <%= attrs %>
-})
+}
 
 export default <%= classifiedModuleName %>
