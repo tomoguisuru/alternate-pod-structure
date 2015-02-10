@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-uncharted-alternate-pod-structure",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "This allows us to use an alternate pod structure like ember-cli/ember-cli#3234",
   "directories": {
     "doc": "doc",
     "test": "tests"
