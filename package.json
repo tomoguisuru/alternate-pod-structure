@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-uncharted-alternate-pod-structure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This allows us to use an alternate pod structure like ember-cli/ember-cli#3234",
   "directories": {
     "doc": "doc",
