@@ -27,7 +27,7 @@ module.exports = {
         // if (options.pod) {
         //   return path.join(options.podPath, 'adapter', options.dasherizedModuleName);
         // }
-        return 'adapter';
+        return 'adapters';
       },
       __test__: function(options) {
         // if (options.pod && hasPathToken) {
