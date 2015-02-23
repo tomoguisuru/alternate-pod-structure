@@ -7,7 +7,15 @@ module.exports = {
     return {
       __path__: function(options) {
         if (options.pod) {
-          return path.join(/*options.podPath, */'components', options.dasherizedModuleName);
+          var nameWithoutComponent = options.dasherizedModuleName.replace(/components\//, '');
+          var slash = nameWithoutComponent.lastIndexOf('/');
+          if (slash > 0) {
+            // Nested components are always under the podPath
+            // This could be driven by configuration in the future
+            return path.join(options.podPath, nameWithoutComponent.substr(0, slash), 'components', nameWithoutComponent.substr(slash + 1));
+          } else {
+            return path.join(/*options.podPath, */'components', options.dasherizedModuleName);
+          }
         }
         return 'components';
       }
