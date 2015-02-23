@@ -61,6 +61,8 @@ This allows us to use an alternate pod structure like this
 
 Further discussion [can be found here](https://github.com/ember-cli/ember-cli/issues/3234). This also includes modifications to the coffeescript templates. They aren't separated since this is only used internally so far.
 
+**Updated Feb 23rd, 2015**: Just added the option that resolve components underneath a pod. It requires calling the component by a full path and the generator assume any component with a path should be nested within a pod. Let me know if you'd like additional documentation on this.
+
 ## Installation
 
 ```
