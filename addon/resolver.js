@@ -2,12 +2,9 @@ import Resolver from 'ember/resolver';
 
 var CustomResolver = Resolver.extend({
   moduleNameLookupPatterns: Ember.computed(function() {
-    return Ember.A([
-      this.podBasedModuleName,
-      this.podBasedComponentsInResource,
-      this.podBasedComponentsInSubdir,
-      this.mainModuleName,
-      this.defaultModuleName
+    var defaults = this._super();
+    return defaults.concat([
+      this.podBasedComponentsInResource
     ]);
   }),
 
@@ -17,7 +14,7 @@ var CustomResolver = Resolver.extend({
       var nameWithoutComponent = parsedName.fullNameWithoutType.replace(/components\//, '');
       var slash = nameWithoutComponent.lastIndexOf('/');
       if (slash > 0) {
-        podPrefix = podPrefix + "/" + nameWithoutComponent.substr(0, slash) + "/components";
+        podPrefix = podPrefix + "/" + nameWithoutComponent.substr(0, slash);
         parsedName.fullNameWithoutType = nameWithoutComponent.substr(slash + 1);
         return this.podBasedLookupWithPrefix(podPrefix, parsedName);
       }
