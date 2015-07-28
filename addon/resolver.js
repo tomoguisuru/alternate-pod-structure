@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import Resolver from 'ember/resolver';
 
 var CustomResolver = Resolver.extend({
@@ -31,4 +32,4 @@ var CustomResolver = Resolver.extend({
   }
 });
 
-export default CustomResolver
+export default CustomResolver;

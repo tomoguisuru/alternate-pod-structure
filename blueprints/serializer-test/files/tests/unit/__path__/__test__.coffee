@@ -1,4 +1,4 @@
-import { test, moduleFor } from 'ember-qunit'
+`import { test, moduleFor } from 'ember-qunit'`
 
 moduleFor 'serializer:<%= dasherizedModuleName %>', '<%= classifiedModuleName %>Serializer', {
   # Specify the other units that are required for this test.

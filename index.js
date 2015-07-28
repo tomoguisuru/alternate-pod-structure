@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'uncharted-alternate-pod-structure'
+  name: 'ember-cli-uncharted-alternate-pod-structure'
 };
